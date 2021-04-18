@@ -10,6 +10,6 @@
   Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
   Lorem Ipsum.</p>
 <ul>
-  <li *ngFor="let val of log">{{val}}</li>
+  <li *ngFor="let val of log" [ngStyle]="{'background-color':val>=5?'green':'white'}">{{val}}</li>
 </ul>
 
