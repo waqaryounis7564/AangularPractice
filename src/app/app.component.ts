@@ -6,17 +6,11 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  userName = '';
-  status: boolean | undefined;
-
-  // tslint:disable-next-line:typedef
-  // getStatus() {
-  //   this.status = ;
-  // }
+  show: boolean | undefined;
 
   // tslint:disable-next-line:typedef
   onClick() {
-
-    this.userName = '';
+    this.show = this.show ? false : true;
+    console.log(this.show);
   }
 }

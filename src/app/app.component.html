@@ -1,7 +1,12 @@
-<h1>Angular</h1>
+<h1>Assigmnet 2</h1>
 
-<label>
-  <input type="text" [(ngModel)]="userName">
-</label>
-<button [disabled]="this.userName.length <= 0" (click)="onClick()">add text</button>
-<p>{{userName}}</p>
+<button (click)="onClick()">Display Details</button>
+
+<p *ngIf="show" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+industry's
+standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+Lorem Ipsum.</p>
+
