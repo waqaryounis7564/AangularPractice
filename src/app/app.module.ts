@@ -8,11 +8,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import {OddComponent} from './game/odd/odd.component';
+import {EvenComponent} from './game/even/even.component';
+import {GameComponent} from './game/game.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, GameComponent, OddComponent, EvenComponent
   ],
   imports: [
     BrowserModule,

@@ -1,2 +1,5 @@
 <h1>Assigmnet 3</h1>
 
+<app-game (outCount)="getVal($event)"></app-game>
+<app-odd *ngFor="let elm of arrOdd" [num]="elm"></app-odd>
+<app-even *ngFor="let elm of arrEven" [num]="elm"></app-even>
